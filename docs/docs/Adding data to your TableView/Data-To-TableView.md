@@ -1,5 +1,5 @@
 # Adding data to your TableView
-There are three different ways to add columns to your TableView, each one with their own use case. Before you get started, you'll need to find out which method you are going to use to add the columns.
+There are two different ways to add columns to your TableView, each one with their own use case. Before you get started, you'll need to find out which method you are going to use to add the columns.
 
 ---
 

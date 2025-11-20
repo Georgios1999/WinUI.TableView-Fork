@@ -5,6 +5,11 @@
 - **`TableViewDateColumn`** and `TableViewTimeColumn` for `DateOnly` and `TimeOnly` repsectively
 - **`TableViewCheckBoxColumn`** for `bool`
 
+You can enable Auto-Generated Columns like so:
+```xml
+<tv:TableView AutoGenerateColumns="True">
+```
+
 Other columns like `TableViewComboBoxColumn` or `TableViewTemplateColumn` need to be handled in code-behind and are not automatically generated.
 
 ---
@@ -38,4 +43,9 @@ void OnAutoGeneratingColumns(object sender, TableViewAutoGeneratingColumnEventAr
         };
     }
 }
+```
+
+Make sure you link it in your TableView:
+```xml
+<tv:TableView AutoGeneratingColumns="OnAutoGeneratingColumns">
 ```
